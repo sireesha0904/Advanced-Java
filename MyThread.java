@@ -1,4 +1,5 @@
 
+//Using the Thread Class: Thread(Runnable r, String name)
 public class MyThread implements Runnable {
     public void run() {
         System.out.println("This thread is running");
