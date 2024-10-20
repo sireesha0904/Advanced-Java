@@ -1,4 +1,4 @@
-package com.AdvancedJava;
+package App;
 
 /**
  * Hello world!
