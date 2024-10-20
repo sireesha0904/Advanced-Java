@@ -1,5 +1,4 @@
-
-
+//When there is a chain of inheritance, it is known as multilevel inheritance
 package Inheritence;
 
 class Animals {
