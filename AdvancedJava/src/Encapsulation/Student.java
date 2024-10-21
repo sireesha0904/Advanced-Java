@@ -47,5 +47,8 @@ public class Student {
 		
 		System.out.println("Student name is : " + st.getName() + " \nStudent id : " + st.getId() + "\nStudent Course : " + st.getCourse());
 		
+		//modify the data using setter methods 
+		st.setCourse("Software Technology");
+		System.out.println("Updated Course is : " + st.getCourse());
 	}
 }
