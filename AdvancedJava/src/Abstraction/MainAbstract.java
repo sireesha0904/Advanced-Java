@@ -5,7 +5,7 @@ features or functionalities to the user. */
 
 package Abstraction;
 
-//Abstract class BankAccount
+//Abstract class BankAccount - A class which is declared with the abstract keyword is known as an abstract class in Java.
 abstract class BankAccount {
  private String accountHolderName;
  private double balance;
