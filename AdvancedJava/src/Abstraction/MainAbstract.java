@@ -1,4 +1,4 @@
-/*it refers to the process of hiding the complex implementation details of an object and showing only the essential 
+/*Abstraction refers to the process of hiding the complex implementation details of an object and showing only the essential 
 features or functionalities to the user. */
 
 // using Abstract Classes
