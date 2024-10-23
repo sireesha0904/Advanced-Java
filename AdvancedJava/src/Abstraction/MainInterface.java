@@ -1,6 +1,7 @@
+//An interface in Java is a blueprint of a class.The interface in Java is a mechanism to achieve abstraction. 
 package Abstraction;
 
-//Payment interface
+//An interface is declared by using the interface keyword.
 interface Payment {
  // Abstract method to process payment
  void processPayment(double amount);
