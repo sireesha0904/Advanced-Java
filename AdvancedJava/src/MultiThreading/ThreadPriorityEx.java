@@ -14,5 +14,9 @@ public class ThreadPriorityEx extends Thread{
 		t1.setPriority(MIN_PRIORITY);
 		t2.setPriority(MIN_PRIORITY);
 		t3.setPriority(7);
+		
+		t1.start();
+		t2.start();
+		t3.start();
 	}
 }
