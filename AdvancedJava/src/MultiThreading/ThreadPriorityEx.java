@@ -1,5 +1,5 @@
 package MultiThreading;
 
-public class ThreadPriorityEx {
+public class ThreadPriorityEx extends Thread{
 
 }
