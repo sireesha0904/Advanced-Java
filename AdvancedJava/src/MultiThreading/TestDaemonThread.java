@@ -9,9 +9,8 @@ public class TestDaemonThread extends Thread{
 		TestDaemonThread th1 = new TestDaemonThread();
 		TestDaemonThread th2 = new TestDaemonThread();
 		
-		th1.setDaemon(true);
+		th1.setDaemon(true); // set daemon value 
 		th2.setDaemon(false);
-		
 		th1.start();
 		th2.start();
 	}
