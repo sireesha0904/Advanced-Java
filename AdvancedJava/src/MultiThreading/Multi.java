@@ -9,8 +9,8 @@ public class Multi implements Runnable{
 	}
 	
 	public static void main(String[] args) {
-		Multi m = new Multi();
-		Thread t = new Thread(m); //using Constructor Thread
-		t.start();
+	Multi m = new Multi(); // Object
+	Thread th = new Thread(m); //Using Thread(runnable r) constructor
+	th.start();
 	}
 }
