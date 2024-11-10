@@ -1,4 +1,4 @@
-package com.synchronization;
+package Synchronization;
 
 public class MethodLevelSyn {
 
