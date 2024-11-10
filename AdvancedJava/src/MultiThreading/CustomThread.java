@@ -8,6 +8,6 @@ public class CustomThread {
 	
 	public static void main(String[] args) {
 		CustomThread t = new CustomThread();
-		t.run();
+		t.run()
 	}
 }
