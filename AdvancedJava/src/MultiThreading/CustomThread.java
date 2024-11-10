@@ -13,5 +13,4 @@ public class CustomThread extends Thread{
 		System.out.println("Code is running outside the Thread");
 		
 	}
-
 }
