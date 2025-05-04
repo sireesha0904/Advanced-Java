@@ -5,14 +5,16 @@ public class AreaofRec {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Enter Length od the Rectangular : ");
+		System.out.println("Enter Length : ");
 		double leng = sc.nextDouble();
 		
-		System.out.println("Enter Bredth of the Rectangular : ");
-		double bred = sc.nextDouble();
+		System.out.println("Enter width : ");
+		double width = sc.nextDouble();
 		
-		double res = leng * bred;
+		double area = leng * width;
 		
-		System.out.println("Area of the Rectangular is : "+ res);
+		System.out.println("Area of the Rectangle is : "+ area + " cm²"); // for cm²(superscript) press alt+0178
+		
+		sc.close();
 	}
 }
