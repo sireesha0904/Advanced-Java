@@ -7,11 +7,11 @@ package Basics;
 public class Variables {
 
 	public static void main(String[] args) {
+		
+		//Primitive datatypes
 		int age = 20;
-		String str = "Sireesha";
 		char c = 'J';
 		double d = 13.45;
-		
 		boolean isStudent = true;
 		boolean forSale = false;
 		
