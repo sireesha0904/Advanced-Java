@@ -8,6 +8,21 @@ public class Variables {
 
 	public static void main(String[] args) {
 		int age = 20;
-		System.out.print(age);
+		String str = "Sireesha";
+		char c = 'J';
+		double d = 13.45;
+		
+		boolean isStudent = true;
+		boolean forSale = false;
+		
+		System.out.println(forSale);
+		System.out.println(age);
+		
+		if(isStudent) {
+			System.out.println("You are a Student");
+		}
+		else {
+			System.out.println("Not a Student");
+		}
 	}
 }
