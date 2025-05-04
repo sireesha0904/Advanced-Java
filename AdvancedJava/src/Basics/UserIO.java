@@ -5,10 +5,19 @@ public class UserIO {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in); //read user input
-		System.out.println("Enter your name here: ");
 		
+		System.out.print("Enter your name here: ");
 		String name = sc.nextLine();
 		
+		System.out.print("Enter your age here : ");
+		int age = sc.nextInt();
+		
+		System.out.print("Enter your grade here : ");
+		double grade = sc.nextDouble();
+		
+		
 		System.out.println("Hello "+ name );
+		System.out.println("You are "+age + " Years Old.");
+		System.out.println("Your grade is "+ grade);
 	}
 }
