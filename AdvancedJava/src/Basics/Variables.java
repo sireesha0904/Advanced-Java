@@ -21,6 +21,7 @@ public class Variables {
 		//Print output
 		System.out.println(forSale);
 		System.out.println(age);
+		System.out.println("Hello "+name);
 		
 		if(isStudent) {
 			System.out.println("You are a Student");
