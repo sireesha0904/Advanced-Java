@@ -21,7 +21,14 @@ public class UserIO {
 		System.out.println("Hello "+ name );
 		System.out.println("You are "+age + " Years Old.");
 		System.out.println("Your grade is "+ grade);
-		System.out.println("Student : "+student);
 		
+		if(student) {
+			System.out.println("You are enrolled as a student");
+		} 
+		else{
+			System.out.println("You are not a student...!");
+		}
+		
+		sc.close();
 	}
 }
