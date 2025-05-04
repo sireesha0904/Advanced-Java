@@ -15,6 +15,10 @@ public class Variables {
 		boolean isStudent = true;
 		boolean forSale = false;
 		
+		// non primitive (Strings, arrays, objects)
+		String name = "Sireesha";
+		
+		//Print output
 		System.out.println(forSale);
 		System.out.println(age);
 		
