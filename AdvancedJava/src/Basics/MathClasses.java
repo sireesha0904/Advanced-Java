@@ -12,7 +12,10 @@ public class MathClasses {
 		System.out.println(Math.round(16.25));
 		
 		
-		//In Java, printf is used to print formatted output to the console
+/*		The printf method in Java is used to print formatted text to the console. 
+		It allows precise control over how output is displayed, 
+		which is especially useful when you want to display numbers, strings, and other data types in a clean and structured format. */
+		
 		String name = "Sireesha";
 		int age = 20; 
 		double score = 8.7;
