@@ -12,8 +12,6 @@ public class Statements {
 		System.out.print("Enter your marks here : ");
 		marks = sc.nextInt();
 		
-		
-		
 		if(marks > 75) {
 			System.out.println("Enter Attendence Eligible(true/false) : ");
 			hasGoodGrade = sc.nextBoolean();
