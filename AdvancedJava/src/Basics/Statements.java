@@ -12,12 +12,14 @@ public class Statements {
 		System.out.print("Enter your marks here : ");
 		marks = sc.nextInt();
 		
-		System.out.println("Enter Attendence Eligible(true/false) : ");
-		hasGoodGrade = sc.nextBoolean();
+		
 		
 		if(marks > 75) {
+			System.out.println("Enter Attendence Eligible(true/false) : ");
+			hasGoodGrade = sc.nextBoolean();
+			
 			if(hasGoodGrade) {
-				System.out.println("ligible for scholarship.");
+				System.out.println("Eligible for scholarship.");
 			} else {
 				System.out.println("Not eligible due to poor attendance.");
 			}
