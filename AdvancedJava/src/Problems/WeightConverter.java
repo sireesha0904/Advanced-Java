@@ -31,7 +31,7 @@ public class WeightConverter {
 		}
 		
 		// option 2 convert kgs to lib
-		else {
+		else{
 			System.out.print("Enter the weight in kgs :");
 			weight = sc.nextDouble();
 			newWeig = weight * 2.20462;
