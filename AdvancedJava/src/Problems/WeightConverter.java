@@ -31,6 +31,12 @@ public class WeightConverter {
 		}
 		
 		// option 2 convert kgs to lib
-		
+		else {
+			System.out.print("Enter the weight in kgs :");
+			weight = sc.nextDouble();
+			newWeig = weight * 2.20462;
+			
+			System.out.println("The new weight in lbs is : "+ newWeig);
+		}
 	}
 }
