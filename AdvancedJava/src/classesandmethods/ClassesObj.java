@@ -7,7 +7,6 @@ class Calculator {
 	}
 }
 
-
 public class ClassesObj {
 
 	public static void main(String[] a) {
