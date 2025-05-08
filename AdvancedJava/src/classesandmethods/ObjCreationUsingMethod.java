@@ -7,7 +7,7 @@ class Students{
 	int age;
 	
 	
-	void insertData(int i, String n, String d, int a) {
+	public void insertData(int i, String n, String d, int a) {
 		id = i;
 		name = n;
 		dept = d;
