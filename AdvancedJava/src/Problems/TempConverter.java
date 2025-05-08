@@ -19,7 +19,7 @@ public class TempConverter {
 		
 		newtemp = (unit.equals("C")) ? (temp * 9/5) + 32 : (temp - 32) * 5/9 ;
 		
-		System.out.println("New Temeperature is : ");
+		System.out.println("New Temeperature is : " + newtemp);
 		
 		sc.close();
 	}
