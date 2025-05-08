@@ -15,8 +15,11 @@ public class TempConverter {
 		System.out.print("Covert to Celsius or Fahrenheit? (C or F) : ");
 		unit = sc.next().toUpperCase();
 		
-		System.out.println(temp);
-		System.out.println(unit);
+		// Ternary Operator -> (condition) ? true : false 
+		
+		newtemp = (unit.equals("C")) ? (C * 9/5) + 32 : (temp - 32) * 5/9 ;
+		
+		System.out.println("New Temeperature is : ");
 		
 		sc.close();
 	}
