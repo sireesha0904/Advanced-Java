@@ -17,7 +17,7 @@ public class TempConverter {
 		
 		// Ternary Operator -> (condition) ? true : false 
 		
-		newtemp = (unit.equals("C")) ? (C * 9/5) + 32 : (temp - 32) * 5/9 ;
+		newtemp = (unit.equals("C")) ? (temp * 9/5) + 32 : (temp - 32) * 5/9 ;
 		
 		System.out.println("New Temeperature is : ");
 		
