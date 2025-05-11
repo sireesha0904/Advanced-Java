@@ -11,11 +11,19 @@ public class GuessTheNumb {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int num;
-		int attempts;
+		int num = 0;
+		int attempts = 0;
 		int randomNum = random.nextInt(1,10);
 		
-		System.out.print("Humber Guessing Game...!\n Enter the number between 1 to 10 : ");
+		System.out.print("Humber Guessing Game...!\n Enter the number between 1 to 10 : \n");
 		
+		do {
+			System.out.print("Enter a number : ");
+			num = sc.nextInt();
+			attempts++;
+			
+		}while(num != randomNum);
+		
+		System.out.println("Congratulations.. You won !");
 	}
 }
