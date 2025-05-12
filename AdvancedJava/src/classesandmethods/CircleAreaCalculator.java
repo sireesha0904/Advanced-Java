@@ -1,6 +1,7 @@
 package classesandmethods;
 
-public class Circle{
+class Circle{
+	
 	public static double CircleArea(double radius) {
 		double area = Math.PI * radius * radius;
 		return area;
