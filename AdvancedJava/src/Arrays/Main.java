@@ -23,10 +23,13 @@ public class Main {
 		
 		String branch[] = {"CSE", "ECE", "EEE", "IT", "Civil"};
 		
+		// Updating value 
+		arr[0]=5;
+		
 		//Accessing 
 		System.out.println("Number at index 2 is : "+ arr[2]);
 		System.out.println("Currently i am : "+ branch[0]);
 		
-		
+		System.out.println("Number at index 2 is : "+ arr[0]);
 	}
 }
