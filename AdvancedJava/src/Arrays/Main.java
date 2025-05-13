@@ -23,6 +23,7 @@ public class Main {
 		
 		String branch[] = {"CSE", "ECE", "EEE", "IT", "Civil"};
 		
+		//Accessing 
 		System.out.println("Number at index 2 is : "+ arr[2]);
 		System.out.println("Currently i am : "+ branch[0]);
 		
