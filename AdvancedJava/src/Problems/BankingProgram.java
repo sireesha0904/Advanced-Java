@@ -37,7 +37,7 @@ public class BankingProgram {
 			System.out.println("3. Withdraw");
 			break;
 		case 4:
-			System.out.println("4. Exit");
+			boolean isRunnning = false;
 			break;
 			default:
 				System.out.println("Invalid Choice");
