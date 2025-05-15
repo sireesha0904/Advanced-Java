@@ -19,8 +19,8 @@ public class StaticVar {
 
 	public static void main(String[] args) {
 		
-		Student.college = "CUTM";
-		
+//		Student.college = "CUTM";  to change the static variable 
+
 		Student s1 = new Student(1, "Sireesha");
 		Student s2 = new Student(2, "Modi");
 		
