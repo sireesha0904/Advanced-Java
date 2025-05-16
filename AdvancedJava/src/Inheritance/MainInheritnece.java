@@ -1,5 +1,5 @@
 //Inheritance allows a class (called the child or subclass) to inherit properties and methods from another class (called the parent or superclass). This promotes code reuse and establishes a relationship between classes.
-package Inheritence; //single Inheritence
+package Inheritance; //single Inheritence
 
 //parent class
 class College {

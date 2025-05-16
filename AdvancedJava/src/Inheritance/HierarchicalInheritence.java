@@ -1,6 +1,6 @@
 //When two or more classes inherits a single class, it is known as hierarchical inheritance.
 
-package Inheritence;
+package Inheritance;
 
 class Animal {
 	void sleep() {

@@ -1,5 +1,5 @@
 //When there is a chain of inheritance, it is known as multilevel inheritance
-package Inheritence;
+package Inheritance;
 
 class Animals {
 	public void eat() {
