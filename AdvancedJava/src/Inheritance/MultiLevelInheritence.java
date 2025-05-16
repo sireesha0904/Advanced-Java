@@ -19,7 +19,7 @@ class Dog extends Cat {
 		System.out.println("This is weeping...");
 	}
 }
-public class MultiInheritence {
+public class MultiLevelInheritence {
 	public static void main(String[] args) {
 		Dog d = new Dog();
 		d.eat();
