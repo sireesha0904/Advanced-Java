@@ -32,6 +32,26 @@ class Teacher extends Person {
 public class Institution  {
 
 	public static void main(String[] args ) {
+	
+		Person p = new Person();
+		p.name = "Modi Sireesha";
+		p.address = "Uppalada";
+		
+		p.displayInfo();
+		
+		Student1 s = new Student1();
+		s.course = "Computer Science Engineering ";
+		
+		s.displayStud();
+		
+		System.out.println();
+		
+		Teacher t = new Teacher();
+		t.subj = "Mathmatices";
+		p.name = "Likhee";
+		p.address = "Vizag";
+		p.displayInfo();
+		t.displayTech();
 		
 	
 	}
