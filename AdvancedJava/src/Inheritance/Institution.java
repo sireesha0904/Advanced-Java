@@ -3,7 +3,7 @@
 package Inheritance;
 
 
-public class HierarchicalInheritence {
+public class Institution  {
 
 	public static void main(String[] args ) {
 		
