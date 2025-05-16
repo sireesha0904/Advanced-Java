@@ -23,17 +23,26 @@ class AdvCal extends Calc{
 	
 }
 
+class VeryAdvCal extends AdvCal {
+	
+	public double power(int n1, int n2) {
+		return Math.pow(n1, n2);
+	}
+}
+
+
 public class Demo {
 
 	public static void main(String[] args) {
 		
-		AdvCal c = new AdvCal();
+		VeryAdvCal c = new VeryAdvCal();
 		
 		int add = c.add(5, 7);
 		int sub = c.sub(5, 3);
 		int mult = c.multi(4,3);
 		int div = c.div(8, 4);
+		double pow = c.power(5,8);
 		
-		System.out.println(add + " "+ sub+ " "+ mult + " "+div);
+		System.out.println(add + " "+ sub+ " "+ mult + " "+div + " "+ pow);
 	}
 }
