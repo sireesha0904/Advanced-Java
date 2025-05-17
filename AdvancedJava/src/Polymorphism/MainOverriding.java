@@ -30,7 +30,8 @@ class Airoplane extends Vehicle {
 
 public class MainOverriding {
  public static void main(String[] args) {
-	 Vehicle v;
+	 Vehicle v = new Vehicle();
+	 v.move();
 	 v = new Car();
 	 v.move();
 	 
