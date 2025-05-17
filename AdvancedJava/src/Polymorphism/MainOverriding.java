@@ -1,47 +1,68 @@
-//Method overriding occurs when a subclass provides a specific implementation for a method that is already defined in its parent class. 
 package Polymorphism;
 
-//Parent class Vehicle
+// Parent class
 class Vehicle {
-
-	void move() {
-		System.out.println("Vehicle is moving...");
-	}
+    void move() {
+        System.out.println("Vehicle is moving...");
+    }
 }
 
+// Subclasses
 class Car extends Vehicle {
-	
-	void move() {
-		 System.out.println("Car is driving on the road.");
-	}
+    void move() {
+        System.out.println("Car is driving on the road.");
+    }
+
+    void openSunroof() {
+        System.out.println("Car sunroof is open.");
+    }
 }
 
 class Ship extends Vehicle {
-	void move() {
-		System.out.println("Ship is sailing on water.");
-	}
-}
-class Airoplane extends Vehicle {
-	 void move() {
-	        System.out.println("Airplane is flying in the sky.");
-	    }
+    void move() {
+        System.out.println("Ship is sailing on water.");
+    }
+
+    void anchor() {
+        System.out.println("Ship anchor is down.");
+    }
 }
 
+class Airoplane extends Vehicle {
+    void move() {
+        System.out.println("Airplane is flying in the sky.");
+    }
+
+    void autopilot() {
+        System.out.println("Airplane is on autopilot mode.");
+    }
+}
 
 public class MainOverriding {
- public static void main(String[] args) {
-	 Vehicle v = new Vehicle();
-	 v.move();
-	 v = new Car();
-	 v.move();
-	 
-	 v = new Ship();
-	 v.move();
-	 
-	 v= new Airoplane();
-	 v.move();
-	 
-	 
-	 
- }
+    public static void main(String[] args) {
+
+        // Upcasting
+        Vehicle v = new Car();   // Upcasting
+        v.move();                // Car's move()
+
+        // Downcasting back to Car
+        Car c = (Car) v;         // Downcasting
+        c.openSunroof();         // Now Car-specific method is accessible
+
+        // Upcasting
+        v = new Ship();          // Upcasting
+        v.move();                // Ship's move()
+
+        // Downcasting
+        Ship s = (Ship) v;       // Downcasting
+        s.anchor();              // Ship-specific method
+
+        // Upcasting
+        v = new Airoplane();     // Upcasting
+        v.move();                // Airoplane's move()
+
+        // Downcasting
+        Airoplane a = (Airoplane) v; // Downcasting
+        a.autopilot();               // Airoplane-specific method
+    }
 }
