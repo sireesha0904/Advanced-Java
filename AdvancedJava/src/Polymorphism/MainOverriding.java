@@ -45,6 +45,9 @@ public class MainOverriding {
         Vehicle v = new Car();   // Upcasting
         v.move();                // Car's move()
 
+//        Car c = new Car();
+//        c.openSunroof(); 
+//        
         // Downcasting back to Car
         Car c = (Car) v;         // Downcasting
         c.openSunroof();         // Now Car-specific method is accessible
