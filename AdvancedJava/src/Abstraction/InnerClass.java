@@ -17,7 +17,6 @@ public class InnerClass {
 		
 		A obj = new A(){
 			
-			
 				void run() {
 					System.out.println("This is Anonymous Inner Class");
 				}
