@@ -15,7 +15,15 @@ public class InnerClass {
 
 	public static void main(String[] args) {
 		
-		A obj = new A();
+		A obj = new A(){
+			
+			
+				void run() {
+					System.out.println("This is Anonymous Inner Class");
+				}
+			
+		};
+		
 		obj.run();
 		
 		A.B ob = obj.new B();
