@@ -6,7 +6,12 @@ enum Status {
 public class Main {
 
 	public static void main(String[] args) {
-		Status s = Status.Pending;
+		Status s = Status.Success;
+		
+		System.out.println(s.getClass().getSuperclass());
+		System.out.println(s.toString());
+		System.out.println(Status.valueOf("Running"));
+		
 		
 		switch(s) {
 		case Running:
@@ -22,7 +27,7 @@ public class Main {
 			break;
 			
 			default:
-			System.out.println("All Good");
+			System.out.println("Done..");
 			break;
 		}
 		
