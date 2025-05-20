@@ -10,5 +10,6 @@ public class EnumsEx {
 		Day today = Day.TUESDAY;
 		
 		System.out.println(today);
+		System.out.println(Day.MONDAY);
 	}
 }
