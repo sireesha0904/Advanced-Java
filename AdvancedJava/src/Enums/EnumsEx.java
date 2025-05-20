@@ -7,9 +7,14 @@ public class EnumsEx {
 
 	public static void main(String[] args ) {
 		
-		Day today = Day.TUESDAY;
+		Day today = Day.MONDAY;
 		
 		System.out.println(today);
-		System.out.println(Day.MONDAY);
+		System.out.println(Day.TUESDAY);
+		
+		if(today == Day.MONDAY) {
+			System.out.println("Start of the work week!");
+		}
+		
 	}
 }
