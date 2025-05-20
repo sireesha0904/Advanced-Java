@@ -27,6 +27,8 @@ public class MainAbst {
 		s.run();
 		s.shape();
 		
-	
+		Shape r = new Rectangle();
+		r.shape();
+		
 	}
 }
