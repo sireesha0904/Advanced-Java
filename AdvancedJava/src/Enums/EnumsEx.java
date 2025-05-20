@@ -16,5 +16,9 @@ public class EnumsEx {
 			System.out.println("Start of the work week!");
 		}
 		
+		for(Day d : Day.values()) {
+			System.out.println(d + " "+ d.ordinal());
+		}
+		
 	}
 }
