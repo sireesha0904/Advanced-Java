@@ -7,6 +7,10 @@ interface Camera {
 	default void cameraInfo() {
 		System.out.println("This is a Camera Interface...");
 	}
+	
+	static void System() {
+		System.out.println("This is a Static Camera");
+	}
 }
 
 interface MusicPlayer {
@@ -45,6 +49,6 @@ public class InterfaceExample {
 		c.cameraInfo();
 		c.musicInfo();
 		
-		
+		Camera.System();
 }
 }
