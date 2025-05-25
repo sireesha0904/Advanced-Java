@@ -1,6 +1,7 @@
 package MultiThreading;
 
-class A extends Thread{
+
+class A implements Runnable{
 	
 	public void run() {
 		for(int i=0; i<=5; i++) {
@@ -10,7 +11,7 @@ class A extends Thread{
 	}
 }
 
-class B extends Thread{
+class B implements Runnable{
     public void run() {
     	for(int i=0; i<=5; i++) {
 			System.out.println("Inside Class B");
@@ -21,11 +22,11 @@ public class Demo {
 
 	public static void main(String[] args) {
 		
-		A t1 = new A();
-		B t2 = new B();
+		Runnable a = new A();
+		Runnable b = new B();
 		
-		t2.setPriority(3);
-		t1.setPriority(4);
+		Thread t1 = new Thread(a);
+		Thread t2 = new Thread(b);
 		
 		t1.start();
 		t2.start();
