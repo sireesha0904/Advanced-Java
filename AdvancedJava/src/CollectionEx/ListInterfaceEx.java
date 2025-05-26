@@ -27,10 +27,13 @@ public class ListInterfaceEx {
 		s.add("Java");
 		s.add("Python");
 		s.addFirst("C");
+		s.add("Java");  // duplicate allowed 
+		s.addLast("Ruby");
 		
 		for(String str : s) {
-			System.out.println(str);
+			System.out.println("LinkedList : "+str);
 		}
 	
+		System.out.println("Get String at index 2 : "+s.get(2));
 	}
 }
