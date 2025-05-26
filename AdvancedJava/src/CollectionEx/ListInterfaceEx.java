@@ -28,6 +28,9 @@ public class ListInterfaceEx {
 		s.add("Python");
 		s.addFirst("C");
 		
-		System.out.println(s);
+		for(String str : s) {
+			System.out.println(str);
+		}
+	
 	}
 }
