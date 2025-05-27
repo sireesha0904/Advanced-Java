@@ -1,1 +1,2 @@
-Helooo...,
+Character Input Stream	Reader, FileReader, BufferedReader	Reads characters
+Character Output Stream	Writer, FileWriter, BufferedWriter	Writes characters
