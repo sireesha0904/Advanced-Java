@@ -9,7 +9,7 @@ public class WriteFile {
 		
 	FileWriter fw = new FileWriter("output.txt");
 	
-	fw.write("Hello Java I/O");
+	fw.write("Hello Java I/O...");
 	fw.close();
 	
 	System.out.println("Sucessfully File Written...");
