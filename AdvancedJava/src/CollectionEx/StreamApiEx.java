@@ -8,6 +8,13 @@ public class StreamApiEx {
 
 	public static void main(String[] args) {
 		List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
+		
+
+		list.forEach( n -> System.out.println(n));  // instead of loop we can use this 
+		
+		
+		
+		// Using Stream
 //		int sum = 0;
 //		for(int n : list) {
 //			if(n%2==0) {
@@ -16,9 +23,5 @@ public class StreamApiEx {
 //			}
 //		}
 		
-		list.forEach( n -> System.out.println(n));  // instead of loop we can use this 
-		
-		// Using Stream
-	
 	}
 }
