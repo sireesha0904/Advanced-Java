@@ -5,13 +5,17 @@ import java.io.IOException;
 
 public class WriteFile {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		
-	FileWriter fw = new FileWriter("output.txt");
-	
-	fw.write("Hello Java I/O...");
-	fw.close();
-	
-	System.out.println("Sucessfully File Written...");
+	try {
+		
+		FileWriter fw = new FileWriter("File.txt");
+		fw.write("Helooo...");
+		System.out.println("Sucessfully File Written....!");
+		
+	}catch(IOException e) {
+		
+		System.out.println(e.getMessage());
 	}
+}
 }
