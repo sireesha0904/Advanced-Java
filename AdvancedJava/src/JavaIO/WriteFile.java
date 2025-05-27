@@ -9,13 +9,14 @@ public class WriteFile {
 		
 	try {
 		
-		FileWriter fw = new FileWriter("File.txt");
-		fw.write("Helooo...");
+		FileWriter fw = new FileWriter("output.txt");
+		fw.write("Helooo...,");
+		fw.close();
 		System.out.println("Sucessfully File Written....!");
 		
 	}catch(IOException e) {
-		
-		System.out.println(e.getMessage());
+	
+		System.out.println("Could not write .. "+e.getMessage());
 	}
 }
 }
