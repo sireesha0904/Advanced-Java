@@ -1,5 +1,5 @@
 package Complexity;
-
+// Print all elements of an array
 public class LinearComplexity {
 
 	public static void main(String[] args) {
@@ -10,3 +10,5 @@ public class LinearComplexity {
 		}
 	}
 }
+
+//Time complexity is O(n) and Space complexity O(1)
