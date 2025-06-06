@@ -20,6 +20,12 @@ public class Prefixsum {
 		
 		int l = 1, r = 3;
 		int sum = prefix[r] - prefix[l-1]; // 24-2 = 22 and 4+6+12 = 12 hence proved
-		 System.out.println("Range Sum [" + l + " to " + r + "] : " + sum);
+		 System.out.println("\nRange Sum [" + l + " to " + r + "] : " + sum);
+		 
+			System.out.print("Original array : ");
+			for(int a : arr) {
+				System.out.print(a+" ");
+			}
+		 
 	}
 }
