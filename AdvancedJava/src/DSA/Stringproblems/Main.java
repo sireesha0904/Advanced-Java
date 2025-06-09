@@ -3,7 +3,7 @@ package DSA.Stringproblems;
 public class Main {
 
 	public static void main(String[] args) {
-		String str = "Hello jAva";
+		String str = "Hello java";
 		String str2 = new String("Hello Strings"); // stored in heap memory
 		
 		
