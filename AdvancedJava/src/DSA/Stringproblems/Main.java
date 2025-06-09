@@ -33,5 +33,10 @@ public class Main {
 		System.out.println("\nReverse a String - " + sb);
 		
 		
+		String s1 = "Hello";
+		String s2 = "hello";
+		
+		System.out.println("\nCompare Two Strings - " + s1.equals(s2));
+		System.out.println("\nCompare Two Strings - " + s1.equalsIgnoreCase(s2));
 	}
 }
