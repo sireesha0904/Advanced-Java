@@ -18,18 +18,19 @@ public class ValidPalindrome {
 			}
 			
 			
-			if(s.charAt(start) != s.charAt(end)) {
-				return false;
+			if(s.charAt(start) == s.charAt(end)) {
+				return true;
 			}
 			start ++;
 			end --;
 		}
-		return true;
+		return false;
 		
 	}
 	public static void main(String[] args) {
-		
-		System.out.println(isPalindrome("No lemon, no melon"));   
+		System.out.println(isPalindrome("Was it a car or a cat I saw?"));
+		System.out.println(isPalindrome("No lemon, no melon"));  
+		System.out.println(isPalindrome("hello"));
 	}
 
 }
