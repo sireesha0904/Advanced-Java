@@ -18,13 +18,13 @@ public class ValidPalindrome {
 			}
 			
 			
-			if(s.charAt(start) == s.charAt(end)) {
-				return true;
+			if(s.charAt(start) != s.charAt(end)) {
+				return false;
 			}
 			start ++;
 			end --;
 		}
-		return false;
+		return true;
 		
 	}
 	public static void main(String[] args) {
