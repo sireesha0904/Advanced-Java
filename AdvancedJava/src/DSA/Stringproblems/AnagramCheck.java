@@ -27,6 +27,7 @@ public class AnagramCheck {
 		return true;
 	}
 	public static void main(String[] args) {
+		
 		System.out.println(isAnagram("silent", "listen"));
 		System.out.println(isAnagram("madam", "women"));
 	}
