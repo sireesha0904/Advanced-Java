@@ -23,9 +23,9 @@ public class RansomNoteCheck {
 
 	public static void main(String[] args) {
 		Solution sol = new Solution();
-		System.out.println(sol.isConstruct("aaabc", "abc"));
-		System.out.println(sol.isConstruct("aaabc", "abbc"));
-		System.out.println(sol.isConstruct("aaabc", "abc"));
+		System.out.println(sol.isConstruct("abc", "aaabc"));
+		System.out.println(sol.isConstruct("aabc", "abbc"));
+		System.out.println(sol.isConstruct("abc", "aaabc"));
 		
 		
 	}
