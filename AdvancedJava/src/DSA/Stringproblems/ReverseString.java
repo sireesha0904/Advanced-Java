@@ -20,7 +20,8 @@ public class ReverseString {
 		
 	}
 	public static void main(String[] args) {
+		String s = reverse("Programming");
 		
-		System.out.println(reverse("Programming"));
+		System.out.println(s);
 	}
 }
