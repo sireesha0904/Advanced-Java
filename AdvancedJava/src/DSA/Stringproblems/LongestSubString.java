@@ -26,7 +26,7 @@ public class LongestSubString {
 		
 		LongestSubString ls = new LongestSubString();
 		String inp = "ababac";
-		System.out.println(ls.Longestsubstring(inp));
+		System.out.println("Maximum substring length : "+ls.Longestsubstring(inp));
 		
 	}
 }
