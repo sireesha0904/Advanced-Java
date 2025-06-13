@@ -24,5 +24,4 @@ public class MaxSumSubArray {
 		System.out.println("Max sum of sub array elements with length 2 : "+max(inp, 2));
 		
 	}
-
 }
