@@ -14,7 +14,7 @@ public class LongestSubString {
 			char ch = s.charAt(right);
 			
 			while(set.contains(ch)) {
-				set.remove(left);
+				set.remove(s.charAt(left));
 				left++;
 			}
 			set.add(ch);
