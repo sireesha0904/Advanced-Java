@@ -27,10 +27,12 @@ public class BinarySearch {
 		int[] a = {2,4,5,9,8,10,12};
 		int result = binarySearch(a,10);
 		
-		if(result != -1) {
-			  System.out.println("Element found at index: " + result);
-		}
-		else 
-			  System.out.println("Element not found ");
+		System.out.println("Element found at index: " + result);
+		
+//		if(result != -1) {
+//			  System.out.println("Element found at index: " + result);
+//		}
+//		else 
+//			  System.out.println("Element not found ");
 	}
 }
