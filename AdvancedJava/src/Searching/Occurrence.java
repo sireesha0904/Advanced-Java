@@ -46,6 +46,10 @@ public class Occurrence {
 		return last;
 	}
 	public static void main(String[] args) {
+		int[] a = {2,4,10,10,10,18,20};
+		int first = firstOcc(a,10);
+		int last = lastOcc(a,10);
 		
+		System.out.println("first Occurrence of element is "+first+"Last Occurrence of element is "+last);
 	}
 }
