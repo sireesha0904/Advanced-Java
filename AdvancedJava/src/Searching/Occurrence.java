@@ -50,6 +50,10 @@ public class Occurrence {
 		int first = firstOcc(a,10);
 		int last = lastOcc(a,10);
 		
-		System.out.println("first Occurrence of element is "+first+" Last Occurrence of element is "+last);
+//		System.out.println("first Occurrence of element is "+first+" Last Occurrence of element is "+last);
+		
+		  System.out.println("First Occurrence: " + first);
+	      System.out.println("Last Occurrence: " + last);
+	      System.out.println("Count: " + (last - first + 1));
 	}
 }
