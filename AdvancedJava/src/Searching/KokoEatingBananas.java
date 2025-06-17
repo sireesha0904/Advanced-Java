@@ -1,0 +1,38 @@
+package Searching;
+
+public class KokoEatingBananas {
+
+	public int KokoEatingSpeed(int[] piles, int h) {
+		int low = 1;
+		int high = getMax(piles);
+		int result = high;
+		
+		while(low<=high) {
+			int mid = low + (high - low)/2;
+			
+			if()
+		}
+		
+	
+	}
+	
+	boolean isCanFinish(int[] piles, int h, int k) {
+		int hours = 0;
+		for(int pile : piles) {
+			hours += Math.ceil((double)pile/2);
+		}
+		return hours <= h;
+	}
+	
+	int getMax(int[] piles) {
+	    int max = Integer.MIN_VALUE;
+	    for (int pile : piles) {
+	        max = Math.max(max, pile);
+	    }
+	    return max;
+	}
+
+	public static void main(String[] args) {
+		
+	}
+}
