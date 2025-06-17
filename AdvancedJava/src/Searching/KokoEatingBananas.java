@@ -39,6 +39,10 @@ public class KokoEatingBananas {
 	}
 
 	public static void main(String[] args) {
-		
+		KokoEatingBananas obj = new KokoEatingBananas();
+		int[] pil = {3,6,7,11};
+		int h = 8;
+		int speed = obj.KokoEatingSpeed(pil, h);
+		System.out.println(speed);
 	}
 }
