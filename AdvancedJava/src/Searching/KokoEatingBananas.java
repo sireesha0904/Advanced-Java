@@ -43,6 +43,6 @@ public class KokoEatingBananas {
 		int[] pil = {3,6,7,11};
 		int h = 8;
 		int speed = obj.KokoEatingSpeed(pil, h);
-		System.out.println(speed);
+		System.out.println("Minimum speed Koko should eat: " + speed);
 	}
 }
