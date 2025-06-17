@@ -25,7 +25,7 @@ public class KokoEatingBananas {
 	boolean isCanFinish(int[] piles, int h, int k) {
 		int hours = 0;
 		for(int pile : piles) {
-			hours += Math.ceil((double)pile/2);
+			hours += Math.ceil((double)pile/k);
 		}
 		return hours <= h;
 	}
