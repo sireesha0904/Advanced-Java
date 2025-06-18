@@ -61,6 +61,6 @@ public class SplitArrayLargestSum {
 		int[] array = {1,2,3,4,5};
 		int k = 2;
 		int result = splitArray(array, k);
-		System.out.println(result);
+		 System.out.println("Minimum Largest Subarray Sum: " + result);
 	}
 }
