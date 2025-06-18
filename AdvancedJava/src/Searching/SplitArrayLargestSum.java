@@ -6,6 +6,39 @@ public class SplitArrayLargestSum {
 		int low = getMax(arr);
 		int high = getSum(arr);
 		int result = high;
+		
+		while(low <= high) {
+			int mid = low + (high - low)/2;
+			
+			if(isValidSplit(arr, k, mid)) {
+				result = mid;
+				high = mid - 1;
+			}
+			else {
+				low = mid + 1;
+			}
+		}
+		return result;
+	}
+	
+	static boolean isValidSplit(int[] arr, int k, int target) {
+		int count = 1;
+		int currentSum = 0;
+		
+		for(int a : arr) {
+			if(currentSum + a <= target) {
+				currentSum += a;
+			}
+			else {
+				count ++;
+				currentSum = a;
+				
+				if(count > k) {
+					return false;
+				}
+			}
+		}
+		return true;
 	}
 	
 	static int getMax(int[] arr) {
