@@ -2,7 +2,7 @@ package Searching;
 
 public class FindUniqueElem {
 
-	 int uniqueEle(int[] arr, int k) {
+	 int uniqueEle(int[] arr) {
 		
 		int low =0; int high = arr.length - 1;
 		while(low <= high) {
@@ -22,8 +22,8 @@ public class FindUniqueElem {
 	public static void main(String[] args) {
 		FindUniqueElem uni = new FindUniqueElem();
 		int[] arr = {1, 1, 2, 2, 3, 3, 4, 4, 5};
-		int ele = 5;
-		int result = uni.uniqueEle(arr, ele);
+	
+		int result = uni.uniqueEle(arr);
 		System.out.println("Unique element from array is "+result);
 	}
 }
