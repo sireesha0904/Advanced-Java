@@ -19,6 +19,7 @@ public class FindUniqueElem {
 		}
 		return arr[low];
 	}
+	 
 	public static void main(String[] args) {
 		FindUniqueElem uni = new FindUniqueElem();
 		int[] arr = {1, 1, 2, 2, 3, 3, 4, 4, 5};
