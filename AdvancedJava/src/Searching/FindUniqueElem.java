@@ -5,10 +5,10 @@ public class FindUniqueElem {
 	 int uniqueEle(int[] arr) {
 		
 		int low =0; int high = arr.length - 1;
-		while(low <= high) {
+		while(low < high) {
 			int mid = low + (high - low)/2;
 			
-			if(arr[mid] % 2 == 1) mid --;
+			if(mid % 2 == 1) mid --;
 			
 			if(arr[mid] == arr[mid+1]) {
 				low = mid + 2;
