@@ -33,6 +33,17 @@ public class MatrixMuliplication {
 	}
 	public static void main(String[] args) {
 	
+		int[][] A = {
+				{1,2}, 
+				{3,4}
+		};
+		int[][] B = {
+				{5,6}, 
+				{7,8}
+		};
 		
+		int[][] res = multiply(A,B);
+		System.out.println("Result Matrix:");
+        printMatrix(res);
 	}
 }
