@@ -19,7 +19,17 @@ public class BubbleSortEx {
 	public static void main(String[] args) {
 	
 		int[] a = {5,1,2,4};
+		System.out.print("Original Array - ");
+		for(int num : a) {
+			System.out.print(num + " ");
+		}
+		
 		bubbleSort(a);
-		System.out.println("Sorted Array");
+		
+		System.out.print("\nSorted Array - ");
+		for(int num : a) {
+			System.out.print(num + " ");
+		}
+		
 	}
 }
