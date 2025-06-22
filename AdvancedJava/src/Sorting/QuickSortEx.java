@@ -34,6 +34,13 @@ public class QuickSortEx {
 		return i+1;
 	}
 	public static void main(String[] args) {
+		int[] arr = {2,5,4,6,8,7};
+		int l = 0, h = arr.length-1;
+		quickSort(arr, l ,h);
 		
+		System.out.println("Sorted Arrat : ");
+		for(int a : arr) {
+			System.out.print(a + " ");
+		}
 	}
 }
