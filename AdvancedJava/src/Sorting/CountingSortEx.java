@@ -8,8 +8,9 @@ public class CountingSortEx {
 		
 		//1 Initialization
 	int max = Arrays.stream(arr).max().getAsInt();
-	int[] output	 = new int[arr.length];
 	int[] count = new int[max + 1];
+	int[] output = new int[arr.length];
+	
 	
 	// 2 count frequency 
 	for(int num : arr) {
@@ -22,7 +23,7 @@ public class CountingSortEx {
 	}
 	
 	// 4 build the output[] 
-	for(int i = arr.length; i>=0; i--) {
+	for(int i = arr.length - 1; i>=0; i--) {
 		int pos = count[arr[i]] - 1;
 		output[pos] = arr[i];
 		count[arr[i]]--;
@@ -39,7 +40,7 @@ public class CountingSortEx {
 		countingSort(a);
 		System.out.println("Sorted array : ");
 		for(int arr : a) {
-			System.out.println(arr+" ");
+			System.out.print(arr+" ");
 		}
 	}
 }
