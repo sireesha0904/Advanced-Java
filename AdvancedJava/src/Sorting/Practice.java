@@ -1,7 +1,23 @@
 package Sorting;
 
+import java.util.Arrays;
+
 public class Practice {
 	static void countingSort(int[] arr) {
+		int n = arr.length;
+		int max = Arrays.stream(arr).max().getAsInt();
+		
+		int count[] = new int[max + 1];
+		int output[] = new int[n];
+		
+		for(int a : arr) {
+			count[a]++;
+		}
+		
+		for(int i = 1; i<n; i++) {
+			count[i] += count[i-1];
+		}
+		
 		
 	}
 
