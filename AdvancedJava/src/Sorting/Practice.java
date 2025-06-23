@@ -14,11 +14,19 @@ public class Practice {
 			count[a]++;
 		}
 		
-		for(int i = 1; i<n; i++) {
+		for(int i = 1; i<count.length; i++) {
 			count[i] += count[i-1];
 		}
 		
+		for(int i = arr.length - 1; i>=0; i--) {
+			int pos = count[arr[i]]-1;
+			output[pos] = arr[i];
+			count[arr[i]]--;
+		}
 		
+		for(int i =0; i<n; i++) {
+			arr[i] = output[i];
+		}
 	}
 
 	public static void main(String[] args) {
