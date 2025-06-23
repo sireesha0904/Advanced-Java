@@ -19,9 +19,9 @@ public class Practice {
 	public static void main(String[] args) {
 		int[] arr = {5,2,4,3,7,9,0};
 		bubbleSort(arr);
-		System.out.println("Sorted Arrat - ");
+		System.out.print("Sorted Array - ");
 		for(int a : arr) {
-			System.out.print(a);
+			System.out.print(a + " ");
 		}
 	}
 }
