@@ -9,6 +9,10 @@ public class RotatedSortedArray {
 		while(start <= end) {
 			int mid = (start + end)/2;
 			
+			 if (arr[mid] == target) {
+	                return mid;
+	            }
+			 
 			if(arr[start] <= arr[mid]) {
 				if(arr[start] <= target && target < arr[mid]) {
 					end = mid -1;
