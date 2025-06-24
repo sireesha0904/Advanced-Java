@@ -33,5 +33,6 @@ public class RotatedSortedArray {
 		int key = 0;
 		
 		int res = rotatedSortedArr(array,key);
+		System.out.println("Index - "+res);
 	}
 }
