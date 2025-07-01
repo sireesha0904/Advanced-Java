@@ -1,4 +1,4 @@
-package DSA.Arrayproblems;
+	package DSA.Arrayproblems;
 
 public class Prefixsum {
 
