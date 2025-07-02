@@ -1,21 +1,22 @@
 package DSA.LinkedLists;
 
-class Node {
+class RNode {
 	int data;
-	Node next;
-	Node(int data){
+	RNode next;
+	RNode(int data){
 		this.data = data;
 		this.next = null;
 	}
 }
 
 class ReversedLinkedList{
-	static Node listReversed(Node head) {
-		Node prev = null;
-		Node curr = head;
+	
+	static RNode listReversed(RNode head) {
+		RNode prev = null;
+		RNode curr = head;
 		
 		while(curr != head) {
-			Node next = curr.next;
+			RNode next = curr.next;
 			curr.next = prev;
 			
 			prev = curr;
@@ -24,10 +25,11 @@ class ReversedLinkedList{
 		return prev;
 	}
 	
-	static void printList(Node head) {
-		Node temp = head;
+	static void printList(RNode head) {
+		RNode temp = head;
 		while(temp != head) {
 			System.out.print(temp.data + "->");
+			temp = temp.next;
 		}
 		System.out.println("null");
 	}
@@ -36,9 +38,9 @@ class ReversedLinkedList{
 public class ReverseLinkedList {
 	
 	public static void main(String[] args) {
-		Node head = new Node(10);
-		head.next = new Node(20);
-		head.next.next = new Node(30);
+		RNode head = new RNode(10);
+		head.next = new RNode(20);
+		head.next.next = new RNode(30);
 		
 		System.out.println("Original List : ");
 		ReversedLinkedList.printList(head);
