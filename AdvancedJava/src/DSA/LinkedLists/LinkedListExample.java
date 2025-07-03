@@ -20,7 +20,7 @@ public class LinkedListExample {
 		first.next = sec;
 		sec.next = third;
 		
-		Node head = first;
+	
 		
 		Node current = first;
 		while(current != null) {
