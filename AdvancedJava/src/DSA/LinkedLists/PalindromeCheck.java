@@ -54,5 +54,14 @@ public class PalindromeCheck {
 	}
 	public static void main(String[] args) {
 		
+		PNode head = new PNode(1);
+		head.next = new PNode(2);
+		head.next.next = new PNode(2);
+		head.next.next.next = new PNode(1);
+		
+		boolean res = checkPalindrome(head);
+		System.out.println(res);
+		
+		
 	}
 }
