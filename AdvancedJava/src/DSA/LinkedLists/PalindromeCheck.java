@@ -62,6 +62,5 @@ public class PalindromeCheck {
 		boolean res = checkPalindrome(head);
 		System.out.println(res);
 		
-		
 	}
 }
