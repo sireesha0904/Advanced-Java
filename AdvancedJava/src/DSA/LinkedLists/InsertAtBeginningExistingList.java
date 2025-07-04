@@ -17,6 +17,22 @@ public class InsertAtBeginningExistingList {
 		return newNode;
 		
 	}
+	
+	static INode insertatEnd(INode head, int value) {
+		
+		INode lastNode = new INode(value);
+		if(head == null) {
+			return lastNode;
+		}
+		
+		INode current = head;
+		while(current.next != null) {
+			current = current.next;
+		}
+		
+		current.next = lastNode;
+		return head;
+	}
 	static void printList(INode head) {
 		INode curr = head;
 		while(curr != null) {
@@ -35,7 +51,12 @@ public class InsertAtBeginningExistingList {
 		printList(head);
 		
 		head = insertNode(head, 5);
-		System.out.println("\nNew List is ");
+		System.out.println("\nInsert at beginning -  List is ");
 		printList(head);
+		
+		head = insertatEnd(head, 40);
+		System.out.println("\nInsert at end - List is ");
+		printList(head);
+		
 	}
 }
