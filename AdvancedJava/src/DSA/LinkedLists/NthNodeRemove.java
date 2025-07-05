@@ -26,19 +26,26 @@ public class NthNodeRemove {
 			second = second.next;
 		}
 		second.next = second.next.next;
-		
-		NNode curr = head;
-		while(curr != null) {
-			System.out.println(curr.data + "->");
-			curr = curr.next;
-		}
-		System.out.println("null");
-		
-		
+
 		return dummy.next;
 	}
 	
+	static void printList(NNode head) {
+	    NNode curr = head;
+	    while (curr != null) {
+	        System.out.print(curr.data + "->");
+	        curr = curr.next;
+	    }
+	    System.out.println("null");
+	}
+	
 	public static void main(String[] args) {
+		NNode head = new NNode(1);
+		head.next = new NNode(2);
+		head.next.next = new NNode(3);
+		head.next.next.next.next = new NNode(4);
 		
+		printList(head);
+		System.out.println("Original List : ");
 	}
 }
