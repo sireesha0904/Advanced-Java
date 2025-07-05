@@ -13,7 +13,7 @@ public class NthNodeRemove {
 
 	static NNode endNodeRemove(NNode head, int n) {
 		NNode dummy = new NNode(0);
-		dummy = head;
+		dummy.next = head;
 		
 		NNode first = dummy;
 		NNode second = dummy;
