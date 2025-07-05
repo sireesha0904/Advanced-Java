@@ -43,9 +43,14 @@ public class NthNodeRemove {
 		NNode head = new NNode(1);
 		head.next = new NNode(2);
 		head.next.next = new NNode(3);
-		head.next.next.next.next = new NNode(4);
+		head.next.next.next = new NNode(4);
 		
-		printList(head);
 		System.out.println("Original List : ");
+		printList(head);
+		
+		head = endNodeRemove(head, 2);
+		System.out.println("New list after remove the N-th node ");
+		printList(head);
+		
 	}
 }
