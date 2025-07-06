@@ -52,5 +52,11 @@ public class NthNodeRemove {
 		System.out.println("New list after remove the N-th node ");
 		printList(head);
 		
+		
+		
+		// find the kth node data 
+		// start both pointers from head
+		// return the second.data 
+		// return -1 if not found the value
 	}
 }
