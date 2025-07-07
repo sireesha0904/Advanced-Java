@@ -22,10 +22,17 @@ public class MergeSortedLists {
 				list1 = list1.next;
 			}
 			else {
-				tail = tail.next;
+				tail.next = list2;
 				list2 = list2.next;
 			}
+			tail = tail.next;
 		}
+		
+		  if (list1 != null) {
+		        tail.next = list1;
+		    } else {
+		        tail.next = list2;
+		    }
 		return dummy.next;
 	}
 	static void printList(String name, MergeNode list) {
@@ -52,6 +59,7 @@ public class MergeSortedLists {
 		printList("List 2 ", list2);
 		
 		MergeNode res = mergeTwoLists(list1, list2);
-		System.out.println("Merge sorted two lists "+res);
+		
+	    printList("Meged Sorted List ",res);
 	}
 }
