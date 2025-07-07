@@ -21,6 +21,16 @@ public class LinkedListIntersectionExample {
 		}
 		return ptrA;
 	}
+	
+	static void printList(String name , INode head) {
+		System.out.print(name + " : ");
+		INode curr = head;
+		while(curr != null) {
+			System.out.print(curr.data + "-> ");
+		}
+		System.out.println();
+	}
+	
 	public static void main(String[] args) {
 		INode common = new INode(8);
 		common.next = new INode(4);
@@ -34,6 +44,9 @@ public class LinkedListIntersectionExample {
 		headB.next = new INode(6);
 		headB.next.next = new INode(1);
 		headB.next.next.next = common;
+		
+		printList("List A ", headA);
+		printList("List B :" , headB);
 		
 		INode res = intersectionNode(headA, headB);
 		if(res != null) {
