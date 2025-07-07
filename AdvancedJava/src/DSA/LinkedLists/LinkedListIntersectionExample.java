@@ -47,7 +47,7 @@ public class LinkedListIntersectionExample {
 		headB.next.next.next = common;
 		
 		printList("List A ", headA);
-		printList("List B :" , headB);
+		printList("List B " , headB);
 		
 		IINodee res = intersectionNode(headA, headB);
 		if(res != null) {
