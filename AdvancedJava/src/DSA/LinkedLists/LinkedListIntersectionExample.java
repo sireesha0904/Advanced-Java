@@ -1,6 +1,6 @@
 package DSA.LinkedLists;
 
-class IINodee {
+class IINodee{
 	int data;
 	IINodee next;
 	
