@@ -30,6 +30,17 @@ public class LinkedListIntersectionExample {
 		headA.next = new INode(1);
 		headA.next.next = common;
 		
-		INode head
+		INode headB = new INode(5);
+		headB.next = new INode(6);
+		headB.next.next = new INode(1);
+		headB.next.next.next = common;
+		
+		INode res = intersectionNode(headA, headB);
+		if(res != null) {
+			 System.out.println("Intersection at node: " + res.data);
+		}
+		else {
+			 System.out.println(" No Intersection at node: ");
+		}
 	}
 }
