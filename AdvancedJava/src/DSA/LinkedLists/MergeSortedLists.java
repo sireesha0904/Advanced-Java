@@ -12,6 +12,22 @@ class MergeNode {
 
 public class MergeSortedLists {
 
+	static MergeNode mergeTwoLists(MergeNode list1, MergeNode list2) {
+		MergeNode dummy = new MergeNode(0);
+		MergeNode tail = dummy;
+		
+		while(list1 != null && list2 != null) {
+			if(list1.data < list2.data) {
+				tail.next = list1;
+				list1 = list1.next;
+			}
+			else {
+				tail = tail.next;
+				list2 = list2.next;
+			}
+		}
+		return dummy.next;
+	}
 	static void printList(String name, MergeNode list) {
 
 		System.out.print(name + ": ");
@@ -34,5 +50,8 @@ public class MergeSortedLists {
 		
 		printList("List 1 ", list1);
 		printList("List 2 ", list2);
+		
+		MergeNode res = mergeTwoLists(list1, list2);
+		System.out.println("Merge sorted two lists "+res);
 	}
 }
