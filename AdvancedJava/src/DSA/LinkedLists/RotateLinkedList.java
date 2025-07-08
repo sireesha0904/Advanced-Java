@@ -10,7 +10,7 @@ class RoNode {
 }
 public class RotateLinkedList {
 
-	static void PrintList(RoNode head) {
+	static void printList(RoNode head) {
 		RoNode curr = head;
 		while(curr != null) {
 			System.out.println(curr.data + "-> ");
@@ -26,6 +26,8 @@ public class RotateLinkedList {
 		list.next.next.next = new RoNode(4);
 		list.next.next.next.next = new RoNode(5);
 		
+		System.out.println("Original List : ");
+		printList(list);
 		
 	}
 }
