@@ -20,6 +20,19 @@ public class StackLL {
 		System.out.println("Pushed : "+x);
 	}
 	
+	int pop() {
+		if(top == null) {
+			System.out.print("Stack Underflow");
+			return -1;
+		}
+		else {
+			int val = top.data;
+			top = top.next;
+			System.out.print("Popped : "+val);
+			return val;
+		}
+		
+	}
 	void display() {
 		Node temp = top;
 		while(temp != null) {
