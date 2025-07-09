@@ -36,6 +36,23 @@ public class Stack {
 		}
 	
 	}
+	
+	//peek element 
+	int peek() {
+		if(top == -1) {
+			System.out.println("Stack is empty.");
+        return -1;
+	}
+        
+		else {
+			return arr[top];
+		}
+		
+	}
+	
+	boolean isEmpty() {
+		return top == -1;
+	}
 	void display() {
 		if(top == -1) {
 			System.out.println("Stack is empty.");
@@ -56,5 +73,13 @@ public class Stack {
 		
 		s.pop();
 		s.display();
+		
+		System.out.println("Top element is : "+s.peek());
+		s.pop();
+		s.display();
+		s.pop();
+		s.pop();
+		s.display();
+		 System.out.println("Is stack empty? " + s.isEmpty());
 	}
 }
