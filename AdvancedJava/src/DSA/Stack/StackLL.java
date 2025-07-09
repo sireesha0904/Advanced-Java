@@ -28,7 +28,7 @@ public class StackLL {
 		else {
 			int val = top.data;
 			top = top.next;
-			System.out.print("Popped : "+val);
+			System.out.println("Popped : "+val);
 			return val;
 		}
 		
@@ -47,5 +47,9 @@ public class StackLL {
 		s.push(10);
 		s.push(20);
 		s.display();
+		
+		s.pop();
+		s.display();
 	}
+	
 }
