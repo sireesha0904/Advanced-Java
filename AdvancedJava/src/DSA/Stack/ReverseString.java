@@ -19,7 +19,7 @@ public static String reverse(String s) {
 	public static void main(String[] args) {
 		String s = "siri";
 		System.out.println("Original String : "+s);
-		System.out.println("Reverse String " + reverse(s));
+		System.out.println("Reverse String : " + reverse(s));
 	}
 }
 
