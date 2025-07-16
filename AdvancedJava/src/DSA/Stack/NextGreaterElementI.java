@@ -17,11 +17,19 @@ public class NextGreaterElementI {
 		}
 		
 		while(!stack.isEmpty()) {
-			
+			map.put(stack.peek(), -1);
 		}
+		
+		int len = nums1.length;
+		int[] res = new int[len];
+		for(int i=0; i<len; i++) {
+			res[i] = map.get(nums1[i]);
+		}
+		return res;
 	}
 	
 	public static void main(String[] args) {
-		
+		int[] nums1 = {4,1,2};
+		int[] nums2 = {1,3,4,2};
 	}
 }
