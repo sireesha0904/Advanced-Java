@@ -1,5 +1,6 @@
 package DSA.Stack;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
@@ -17,7 +18,7 @@ public class NextGreaterElementI {
 		}
 		
 		while(!stack.isEmpty()) {
-			map.put(stack.peek(), -1);
+			map.put(stack.pop(), -1);
 		}
 		
 		int len = nums1.length;
@@ -31,5 +32,7 @@ public class NextGreaterElementI {
 	public static void main(String[] args) {
 		int[] nums1 = {4,1,2};
 		int[] nums2 = {1,3,4,2};
+		int[] res = nextGreaterElement(nums1, nums2);
+		  System.out.println("Next Greater Elements: " + Arrays.toString(res));
 	}
 }
