@@ -32,7 +32,7 @@ public class MinStack {
 	
 	public static  int getMin() {
 		if(!minStack.isEmpty()) {
-			minStack.peek();
+			return minStack.peek();
 		}
 		return -1;
 	}
@@ -44,7 +44,7 @@ public class MinStack {
 		
 		System.out.println("Current Min: " + getMin());
 		pop();
-		   System.out.println("Current Min after pop: " + getMin());
-	        System.out.println("Top Element: " + getTop()); 
+		System.out.println("Current Min after pop: " + getMin());
+	    System.out.println("Top Element: " + getTop()); 
 	}
 }
