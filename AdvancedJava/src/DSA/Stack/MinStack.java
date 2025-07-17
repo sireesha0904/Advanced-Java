@@ -44,7 +44,7 @@ public class MinStack {
 		
 		System.out.println("Current Min: " + getMin());
 		pop();
-		   System.out.println("Current Min after pop: " + getMin()); // 2
-	        System.out.println("Top Element: " + getTop()); // 5
+		   System.out.println("Current Min after pop: " + getMin());
+	        System.out.println("Top Element: " + getTop()); 
 	}
 }
