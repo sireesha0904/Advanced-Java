@@ -44,5 +44,6 @@ public class ImpleUsingArr {
 		q.enqueue(20);
 		q.enqueue(30);
 		q.display();
+		
 	}
 }
