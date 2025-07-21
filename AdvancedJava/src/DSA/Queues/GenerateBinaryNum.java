@@ -27,7 +27,7 @@ public static void generateBinaryNumber(int N){
 }
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter Number -  ");
+		System.out.print("Enter Number -  ");
 		int n = sc.nextInt();
 		System.out.println("Binary numbers from 1 to " + n + ":");
 		generateBinaryNumber(n);
