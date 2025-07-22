@@ -20,7 +20,7 @@ public class PowerOf {
 		PowerOf p = new PowerOf();
 		int res = p.power(a, b);
 		
-		System.out.println("Power of "+a+"^" + b + " = "+res	);
+		System.out.println("Power of "+a+"^" + b + " = "+res);
 		
 	}
 }
