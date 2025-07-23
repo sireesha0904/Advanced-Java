@@ -9,7 +9,8 @@ public class SumOfArray {
 	public static void main(String[] args) {
 		SumOfArray s = new SumOfArray();
 		int[] arr = {1,2,3,4};
-		
+		int res = s.sum(arr, 0);
+		System.out.print(res);
 	}
 
 }
