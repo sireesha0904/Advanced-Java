@@ -53,6 +53,22 @@ public class Sudoku4x4 {
 	boolean isvalid(int[][] board, int row, int col, int num) {
 		int n = board.length;
 		
+		for(int r = 0; r<n; r++) {
+			if(board[r][col]==num) return false;
+		}
+		for(int c=0; c<n; c++) {
+			if(board[row][c] == num) return false;
+		}
 		
+		int boxSize = (int)Math.sqrt(n);
+		int startRow = row - row%boxSize;
+		int startCol = col - col % boxSize;
+		
+		for(int r = 0; r<startRow; r++) {
+			for(int c =0; c<startCol; c++) {
+				if(board[startRow + 1][startCol + 1] == num) return false;
+			}
+		}
+		return true; // no conflict num is valid , can fit 
 	}
 }
