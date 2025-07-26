@@ -4,10 +4,10 @@ public class Sudoku4x4 {
 
 	public static void main(String[] args) {
 		 int[][] board = {
-		            {1, 2, 0, 4},
-		            {0, 0, 3, 0},
-		            {0, 3, 0, 0},
-		            {2, 0, 0, 1}
+				 {1, 0, 0, 4},
+				    {0, 0, 1, 0},
+				    {0, 1, 0, 0},
+				    {2, 0, 0, 3}
 		        };
 
 		        Sudoku4x4 solver = new Sudoku4x4();
@@ -64,8 +64,8 @@ public class Sudoku4x4 {
 		int startRow = row - row%boxSize;
 		int startCol = col - col % boxSize;
 		
-		for(int r = 0; r<startRow; r++) {
-			for(int c =0; c<startCol; c++) {
+		for(int r = 0; r<boxSize; r++) {
+			for(int c =0; c<boxSize; c++) {
 				if(board[startRow + 1][startCol + 1] == num) return false;
 			}
 		}
