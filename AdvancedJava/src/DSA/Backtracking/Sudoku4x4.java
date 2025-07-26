@@ -66,7 +66,7 @@ public class Sudoku4x4 {
 		
 		for(int r = 0; r<boxSize; r++) {
 			for(int c =0; c<boxSize; c++) {
-				if(board[startRow + 1][startCol + 1] == num) return false;
+				if(board[startRow + r][startCol + c] == num) return false;
 			}
 		}
 		return true; // no conflict num is valid , can fit 
