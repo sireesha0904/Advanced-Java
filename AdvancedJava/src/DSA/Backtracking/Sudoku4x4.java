@@ -49,4 +49,10 @@ public class Sudoku4x4 {
 		}
 		return true; // no cell empty, solved 
 	}
+	
+	boolean isvalid(int[][] board, int row, int col, int num) {
+		int n = board.length;
+		
+		
+	}
 }
