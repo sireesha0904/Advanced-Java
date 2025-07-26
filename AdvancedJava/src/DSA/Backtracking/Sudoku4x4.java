@@ -43,9 +43,10 @@ public class Sudoku4x4 {
 							board[row][col] = 0; // backtrack
 						}
 					}
+					return false;
 				}
 			}
 		}
-		return true;
+		return true; // no cell empty, solved 
 	}
 }
