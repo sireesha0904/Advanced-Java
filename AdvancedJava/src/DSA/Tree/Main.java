@@ -10,6 +10,26 @@ class TreeNode {
 }
 public class Main {
 
+	static void preorder(TreeNode root) {
+		if(root == null) return;
+		System.out.print(root.val + " ");
+		preorder(root.left);
+		preorder(root.right);
+	}
+	
+	static void inorder(TreeNode root) {
+		if(root == null) return;
+		inorder(root.left);
+		System.out.print(root.val + " ");
+		inorder(root.right);
+	}
+	
+	static void postorder(TreeNode root) {
+		if(root == null) return;
+		inorder(root.left);
+		inorder(root.right);
+		System.out.print(root.val + " ");
+	} 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
