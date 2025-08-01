@@ -40,6 +40,20 @@ public class Main {
 		root.left.right = new TreeNode(5);
 		
 		System.out.print("Root val : "+root.val);
+		
+		System.out.println("Preorder Traversal:");
+	    preorder(root);  // Output: 1 2 4 5 3
+	    System.out.println();
+	        
+	        System.out.println("Preorder Traversal:");
+	        inorder(root);  // Output: 1 2 4 5 3
+	        System.out.println();
+
+	        System.out.println("Preorder Traversal:");
+	        postorder(root);  // Output: 1 2 4 5 3
+	        System.out.println();
+
+
 	}
 
 }
