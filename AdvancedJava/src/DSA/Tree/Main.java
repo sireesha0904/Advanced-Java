@@ -39,17 +39,17 @@ public class Main {
 		root.left.left = new TreeNode(4);
 		root.left.right = new TreeNode(5);
 		
-		System.out.print("Root val : "+root.val);
+		System.out.println("Root val : "+root.val);
 		
 		System.out.println("Preorder Traversal:");
 	    preorder(root);  // Output: 1 2 4 5 3
 	    System.out.println();
 	        
-	        System.out.println("Preorder Traversal:");
+	        System.out.println("Inorder Traversal:");
 	        inorder(root);  // Output: 1 2 4 5 3
 	        System.out.println();
 
-	        System.out.println("Preorder Traversal:");
+	        System.out.println("Postorder Traversal:");
 	        postorder(root);  // Output: 1 2 4 5 3
 	        System.out.println();
 
