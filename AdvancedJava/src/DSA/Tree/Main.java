@@ -30,6 +30,11 @@ public class Main {
 		inorder(root.right);
 		System.out.print(root.val + " ");
 	} 
+	
+	static int countNodes(TreeNode root) {
+		if(root == null) return 0;
+		return 1 + countNodes(root.left) +  countNodes(root.right);
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -53,6 +58,7 @@ public class Main {
 	        postorder(root);  // Output: 1 2 4 5 3
 	        System.out.println();
 
+	        System.out.println("Total number of Nodes are : "+countNodes(root));
 
 	}
 
